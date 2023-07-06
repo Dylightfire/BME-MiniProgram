@@ -1,0 +1,5 @@
+<!--pages/knowledge/knowledge.wxml-->
+<text>你来到了一片没有知识的荒原~</text>
+<navigator url="/pages/information/information" open-type="switchTab">导航到我的页面</navigator>
+<navigator url="/pages/testpage/testpage" open-type="navigate">导航到测试页面</navigator>
+

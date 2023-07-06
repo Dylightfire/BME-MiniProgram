@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="input-wrap">
+    <view>用户名:</view>
+    <input value="{{username}}" bindinput="inputUsername" class="info-input"/>
+  </view>
+  <view class="input-wrap">
+    <view>密码:</view>
+    <input value="{{password}}" bindinput="inputPassword" class="info-input"/>
+  </view>
+
+  <button bindtap="login" class="action">登录</button>
+  <button bindtap="toregiste" class="register">注册</button>
+  <button bindtap="test" class="testpage">测试页面</button>
+</view>

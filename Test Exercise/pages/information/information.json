@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-test": "/components/test/test"
+  },
+  "navigationBarBackgroundColor": "#AFEEEE",
+  "navigationBarTitleText": "我的信息"
+}

@@ -1,0 +1,9 @@
+<!--pages/message/message.wxml-->
+<view class="log-in">
+  <text>Log in successfully!</text>
+</view>
+<view>----------------------------------------------</view>
+<view wx:for="{{array}}" wx:key="index">
+  索引是：{{index}}，item项是: {{item}}
+</view>
+<view>----------------------------------------------</view>

@@ -1,0 +1,8 @@
+/* pages/message/message.wxss */
+.log-in {
+  color: rgb(35, 103, 228);
+  margin-top: 50rpx;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}

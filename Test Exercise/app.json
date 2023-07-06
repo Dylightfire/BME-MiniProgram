@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/register/register",
+    "pages/testpage/testpage",
+    "pages/information/information",
+    "pages/knowledge/knowledge",
+    "pages/robot/robot"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#6E03B2",
+    "navigationBarTitleText": "My First App",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/首页.png",
+        "selectedIconPath": "/images/首页.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "知识",
+        "iconPath": "/images/知识.png",
+        "selectedIconPath": "/images/知识.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "我的",
+        "iconPath": "/images/我的.png",
+        "selectedIconPath": "/images/我的（选中）.png"
+      }
+    ]
+  }
+}
