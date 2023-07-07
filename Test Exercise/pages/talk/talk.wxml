@@ -1,0 +1,24 @@
+<view>
+  <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
+</view>
+
+<scroll-view scroll-y="true" class="chat-content">
+  <view class="chat-messages">
+    <block wx:for="{{ chatRecords }}" wx:key="index">
+      <view class="chat-message" wx:if="{{ item.role === 'robot' }}">
+        <view class="message-container">
+          <image class="avatar" src="/images/UI设计图片/蟹老板.png"></image>
+          <image class="chat-background" src="/images/UI设计图片/聊天框（已抠）.png"></image> <!-- 使用 <image> 标签作为背景 -->
+          <view class="robot-bubble">
+            <text class="robot-message">{{ item.content }}</text>
+          </view>
+        </view>
+      </view>
+      <!-- 添加用户发言的聊天框 -->
+    </block>
+  </view>
+</scroll-view>
+
+
+
+

@@ -4,5 +4,6 @@
   "setting": {
     "compileHotReLoad": true,
     "bigPackageSizeSupport": true
-  }
+  },
+  "libVersion": "2.32.3"
 }

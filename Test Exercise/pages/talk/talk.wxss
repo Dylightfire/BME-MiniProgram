@@ -1,0 +1,48 @@
+.backimage{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+.chat-messages {
+  height: 100%;
+  padding-bottom: 10px; /* 可选，根据需要微调底部留白 */
+}
+
+
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.robot-bubble {
+  background-color: #EFEFEF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-content {
+  width: 85%;
+  margin-top: 20px; /* 可选，根据需要微调垂直位置 */
+}
+
+.chat-background {
+  position:absolute;
+  width: 30%;
+  height: 30%;
+  z-index: -1;
+  /* 其他样式设置 */
+}
+

@@ -52,4 +52,10 @@ Page({
     })
   },
 
+  UItest(){
+    wx.navigateTo({
+      url: '../talk/talk',
+    })
+  },
+
 })

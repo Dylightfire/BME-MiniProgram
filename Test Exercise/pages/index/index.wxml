@@ -12,4 +12,5 @@
   <button bindtap="login" class="action">登录</button>
   <button bindtap="toregiste" class="register">注册</button>
   <button bindtap="test" class="testpage">测试页面</button>
+  <button bindtap="UItest" class="testpage">UI测试</button>
 </view>
