@@ -2,4 +2,5 @@
 <view>你好！</view>
 
 <view></view>
-<my-test></my-test>
+<my-test max = "7"></my-test>
+<color-test></color-test>

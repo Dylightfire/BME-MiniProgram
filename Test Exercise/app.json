@@ -9,6 +9,20 @@
     "pages/knowledge/knowledge",
     "pages/robot/robot"
   ],
+
+  "plugins": {
+    "chatbot": {
+      "version": "1.3.8",
+      "provider": "wx8c631f7e9f2465e1"
+    }
+  },
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#6E03B2",
@@ -32,6 +46,12 @@
         "text": "知识",
         "iconPath": "/images/知识.png",
         "selectedIconPath": "/images/知识.png"
+      },
+      {
+        "pagePath": "pages/robot/robot",
+        "text": "API",
+        "iconPath": "/images/机器人_o.png",
+        "selectedIconPath": "/images/机器人_o.png"
       },
       {
         "pagePath": "pages/information/information",

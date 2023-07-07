@@ -1,0 +1,9 @@
+/* components/text-color/test-color.wxss */
+.colorBox {
+  line-height: 200rpx;
+  font-size: 24rpx;
+  color: white;
+  text-shadow: 0rpx 0rpx 2rpx black;
+  text-align: center;
+  margin-top: 60rpx;
+}

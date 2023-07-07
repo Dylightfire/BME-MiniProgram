@@ -1,14 +1,4 @@
 <!--pages/testpage/testpage.wxml-->
-<view>-------------------------</view>
-
-<view class="weather"> 
-  <text>{{weatherData}}</text> 
+<view class="weather">
+  <text>{{weatherData}}</text>
 </view>
-
-<view>
-吃早饭对于身体健康和精神状态都非常重要。
-早餐是一天中最重要的一餐，它提供了身体所需的能量和营养物质，以便在开始一天的活动时保持精力充沛。如果你不吃早餐，你会感到疲劳，难以集中精神，甚至会影响你的心情。
-此外，吃早餐还可以帮助你控制体重，因为它可以减少你在午餐和晚餐时的食欲和进食量。
-总之，吃早餐是非常重要的，它可以帮助你保持健康，精力充沛，提高工作效率和生活质量。</view>
-<view>-------------------------</view>
-<navigator open-type="navigateBack" delta="1">返回上一页</navigator>

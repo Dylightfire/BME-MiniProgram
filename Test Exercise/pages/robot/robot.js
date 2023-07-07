@@ -1,6 +1,8 @@
 // pages/robot/robot.js
 Page({
+  getQueryCallback: function(e) {
 
+  },
   /**
    * 页面的初始数据
    */

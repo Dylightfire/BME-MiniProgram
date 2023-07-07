@@ -1,2 +1,7 @@
 <!--components/test/test.wxml-->
-<text>components/test/test.wxml</text>
+<view>count的值是：{{count}}</view>
+<button bindtap="addCount">+1</button>
+
+<view>{{n1}} + {{n2}} = {{sum}}</view>
+<button bindtap="addCount1">N1自增</button>
+<button bindtap="addCount2">N2自增</button>
