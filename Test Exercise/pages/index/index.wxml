@@ -1,16 +1,19 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="input-wrap">
-    <view>用户名:</view>
-    <input value="{{username}}" bindinput="inputUsername" class="info-input"/>
-  </view>
-  <view class="input-wrap">
-    <view>密码:</view>
-    <input value="{{password}}" bindinput="inputPassword" class="info-input"/>
-  </view>
-
-  <button bindtap="login" class="action">登录</button>
-  <button bindtap="toregiste" class="register">注册</button>
-  <button bindtap="test" class="testpage">测试页面</button>
-  <button bindtap="UItest" class="testpage">UI测试</button>
+<view>
+  <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
 </view>
+<image src="/images/UI设计图片/圆 1@1x.png" class="logo"></image>
+
+<view class="EnglishName" style="font-stretch:extra-expanded;">Skincare Player</view>
+
+
+<view class="username">用户名</view>
+
+<input value="{{username}}" bindinput="inputUsername" class="userNameInput" placeholder="请输入账号"/>
+
+<view class="username">密码</view>
+
+<input value="{{password}}" bindinput="inputPassword" class="userNameInput" placeholder="请输入密码"/>
+
+<button bindtap="login" class="login" type="default" plain="true">登录</button>
+<button bindtap="toregiste" class="register" type="default" plain="true">注册</button>

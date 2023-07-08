@@ -54,7 +54,7 @@ Page({
 
   UItest(){
     wx.navigateTo({
-      url: '../talk/talk',
+      url: '../Login/Login',
     })
   },
 

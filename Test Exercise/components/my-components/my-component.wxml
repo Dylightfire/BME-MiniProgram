@@ -1,0 +1,6 @@
+<!--components/my-component.wxml-->
+<view class="button-container" bindtap="handleTap">
+  <image class="button-image" src="/images/UI设计图片/按钮（红色）.png"></image>
+  <text class="button-text">确定</text>
+</view>
+

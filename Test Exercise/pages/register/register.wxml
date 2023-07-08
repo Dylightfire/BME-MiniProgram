@@ -1,12 +1,19 @@
 <!--pages/register/register.wxml-->
-<view class="container">
-  <view class="input-wrap">
-    <view>用户名:</view>
-    <input value="{{username}}" bindinput="inputUsername" class="info-input"/>
-  </view>
-  <view class="input-wrap">
-    <view>密码:</view>
-    <input value="{{password}}" bindinput="inputPassword" class="info-input"/>
-  </view>
-  <button bindtap="register" class="action">点击注册</button>
+<view>
+  <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
+</view>
+
+<view class="section">
+  <view class="EnglishName" style="font-stretch:extra-expanded;">Welcome to Skincare Player !</view>
+
+  <view class="username">用户名</view>
+  <input value="{{username}}" bindinput="inputUsername" class="userNameInput" placeholder="请输入注册账号"/>
+
+  <view class="username">密码</view>
+  <input value="{{password}}" bindinput="inputPassword" class="userNameInput" placeholder="请输入密码"/>
+
+  <view class="username">昵称</view>
+  <input value="{{nickname}}" bindinput="inputNickname" class="userNameInput" placeholder="请输入昵称"/>
+
+  <button bindtap="register" class="register" type="default" plain="true">点击注册</button>
 </view>

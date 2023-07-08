@@ -1,6 +1,17 @@
 <!--pages/information/information.wxml-->
-<view>你好！</view>
+<view>
+  <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
+</view>
 
-<view></view>
-<my-test max = "7"></my-test>
-<color-test></color-test>
+<view class="container">
+  <view class="avatar-wrapper">
+    <image class="avatar" src="/images/UI设计图片/蟹老板(1).png"></image>
+    <view class="user-info">
+      <text class="nickname">用户昵称</text>
+      <text class="account">用户账号</text>
+    </view>
+  </view>
+  <!-- 其他页面内容 -->
+</view>
+
+<test></test>

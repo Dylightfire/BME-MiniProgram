@@ -6,6 +6,7 @@ Page({
   data: {
     username: '',
     password: '',
+    nickname: '',
   },
 
   inputUsername(e) {
@@ -20,14 +21,22 @@ Page({
     })
   },
 
+  inputNickname(e) {
+    this.setData({
+      nickname: e.detail.value,
+    })
+  },
+
   register() {
     const {
       username,
       password,
+      nickname,
     } = this.data;
     const user = new AV.User();
     if (username) user.set({username});
     if (password) user.set({password});
+    if (nickname) user.set({nickname});
     user.save().then(() => {
       wx.showToast({
         title: '注册成功',

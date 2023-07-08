@@ -8,3 +8,18 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+/* 修改底部导航栏背景颜色 */
+.tabbar {
+  background-color: #e00f32; /* 替换为您想要的颜色 */
+}
+
+/* 修改底部导航栏图标和文本的默认颜色 */
+.tabbar-item {
+  color: #E1FCF6; /* 替换为您想要的颜色 */
+}
+
+/* 修改底部导航栏选中项的颜色 */
+.tabbar-item-active {
+  color: #000000; /* 替换为您想要的颜色 */
+}

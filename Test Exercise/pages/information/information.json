@@ -1,8 +1,7 @@
 {
   "usingComponents": {
-    "my-test": "/components/test/test",
-    "color-test": "/components/test-color/test-color"
+    "test":"/components/my-components/my-component"
   },
-  "navigationBarBackgroundColor": "#AFEEEE",
-  "navigationBarTitleText": "我的信息"
+  "navigationBarBackgroundColor": "#007CA5",
+  "navigationBarTitleText": "控肤玩家"
 }

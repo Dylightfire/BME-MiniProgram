@@ -1,20 +1,50 @@
 /* pages/register/register.wxss */
-
-.input-wrap {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 10rpx;
-  justify-content: space-between;
-}
-
-.info-input {
-  border: 2rpx solid #000000;
+.logo{
+  height: 200rpx;
   width: 200rpx;
+  border: black;
+  margin-top: 50rpx;
+  margin-left: 275rpx;
 }
 
-.action {
-  margin-top: 60rpx;
-  background-color: #6E03B2;
-  color: white;
+.EnglishName{
+  margin-top: 120rpx;
+  margin-bottom: 100rpx;
+  margin-left: 90rpx;
+  font-size:medium;
+  font-family: Arial Bold;
+  font-weight: bold;
+  font-stretch: expanded;
+}
+
+.username{
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  font-family: 黑体;
+  font-size: medium;
+}
+
+.userNameInput{
+  margin-top: 20rpx;
+  margin-left: 120rpx;
+  font-size: small;
+  color: black;
+  text-decoration: cadetblue;
+}
+
+.login{
+  margin-top: 80rpx;
+}
+.register{
+  margin-top: 100rpx;
+}
+
+.backimage{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
 }
