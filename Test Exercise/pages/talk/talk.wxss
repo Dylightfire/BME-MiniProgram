@@ -12,7 +12,7 @@
   height: 100%;
   padding-bottom: 100rpx; /* 可选，根据需要微调底部留白 */
   opacity: 1;
-  transition: opacity;
+  animation: fade-in 1s forwards;
 }
 .message-container {
   display: flex;
@@ -24,12 +24,16 @@
   height: 130rpx;
   margin-right: 10rpx;
   border-radius: 50%;
+  opacity: 1;
+  animation: fade-in 1s forwards;
 }
 .robot-bubble {
   position: relative;
   margin-top: 18rpx;
   display: inline-block;
   min-height: 30rpx; /* 设置一个最小高度，确保对话框有一定高度 */
+  opacity: 1;
+  animation: fade-in 1s forwards;
 }
 .bubble-background {
   position: absolute;
@@ -57,4 +61,12 @@
 .message-container {
   display: flex;
   align-items: flex-start;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

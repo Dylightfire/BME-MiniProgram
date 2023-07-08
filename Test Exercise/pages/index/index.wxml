@@ -2,16 +2,25 @@
 <view>
   <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
 </view>
-<image src="/images/UI设计图片/圆 1@1x.png" class="logo"></image>
 
-<view class="EnglishName" style="font-stretch:extra-expanded;">Skincare Player</view>
+
+<view class="container">
+  <view class="logo">
+    <image src="/images/UI设计图片/圆 1@1x.png" class="logoimage"></image>
+  </view>
+  <view class="EnglishName" style="font-stretch:extra-expanded;">Skincare Player</view>
+</view>
+
+
+
+
 
 
 <view class="username">用户名</view>
 
 <input value="{{username}}" bindinput="inputUsername" class="userNameInput" placeholder="请输入账号"/>
 
-<view class="username">密码</view>
+<view class="password">密码</view>
 
 <input value="{{password}}" bindinput="inputPassword" class="userNameInput" placeholder="请输入密码"/>
 

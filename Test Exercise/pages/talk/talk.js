@@ -1,10 +1,10 @@
 Page({
   data: {
     chatRecords: [],
+    showComponent: false,
   },
 
   onLoad: function () {
-    // 延时添加机器人消息
     this.addRobotMessageWithDelay();
   },
 
@@ -12,9 +12,6 @@ Page({
     const robotMessages = [
       '欢迎来到我的商店！',
       '有什么我能帮你的嘛？',
-      '关于“洁面”我有以下推荐：',//index=3
-      '关于“保湿”我有以下推荐：',//index=4
-      '关于“精华”我有以下推荐：'//index=5
     ];
 
     let index = 0;
@@ -29,10 +26,33 @@ Page({
       });
 
       index++;
-      if (index < robotMessages.length && index < 2 ) {
+      if (index < robotMessages.length && index <= 2 ) {
         setTimeout(addMessage, 1000); // 1秒延时
+      }
+      if(index===2)
+      {
+        setTimeout(() => {
+          this.setData({
+            showComponent: true
+          });
+        }, 1000);
       }
     };
     setTimeout(addMessage, 1000); // 1秒延时开始添加机器人消息
   },
+
+
+
+
+  handleButtonClick: function () {
+    const robotMessage = {
+      role: 'robot',
+      content: '关于“洁面”我有以下推荐：'
+    };
+    const chatRecords = this.data.chatRecords.concat(robotMessage); 
+    this.setData({
+      chatRecords,
+    });
+  }
+
 });

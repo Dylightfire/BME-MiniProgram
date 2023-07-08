@@ -1,22 +1,39 @@
 /**index.wxss**/
-.logo{
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 将内容垂直对齐到顶部 */
+  align-items: center; /* 居中对齐 */
+  height: 50rpx; /* 设置容器高度为视口高度 */
+  margin-top: -120rpx;
+}
+
+.logo {
+  margin-bottom: 10rpx; /* 调整logo与文本之间的间距 */
+}
+
+.logoimage {
   height: 200rpx;
   width: 200rpx;
   border: black;
-  margin-top: 50rpx;
-  margin-left: 275rpx;
 }
 
-.EnglishName{
-  margin-top: 10rpx;
-  margin-left: 160rpx;
+.EnglishName {
   font-size: x-large;
   font-family: Arial Bold;
   font-weight: bold;
   font-stretch: expanded;
+  text-align: center; /* 居中文本 */
 }
 
+
 .username{
+  margin-top: 150rpx;
+  margin-left: 100rpx;
+  font-family: 黑体;
+  font-size: medium;
+}
+.password{
   margin-top: 50rpx;
   margin-left: 100rpx;
   font-family: 黑体;

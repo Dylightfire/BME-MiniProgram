@@ -21,5 +21,8 @@
 </scroll-view>
 
 
-<chooseButton></chooseButton>
+<view class="component-1">
+  <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick"></chooseButton>
+</view>
+
 
