@@ -46,16 +46,4 @@ Page({
     });
   },
 
-  test(){
-    wx.navigateTo({
-      url: '../testpage/testpage',
-    })
-  },
-
-  UItest(){
-    wx.navigateTo({
-      url: '../Login/Login',
-    })
-  },
-
 })

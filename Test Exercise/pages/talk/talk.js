@@ -2,6 +2,18 @@ Page({
   data: {
     chatRecords: [],
     showComponent: false,
+    buttonNames: ['洁面', '保湿', '精华'],
+    ClearFace: false,
+  },
+  updateValue: function (componentId, newValue) {
+    const component = this.selectComponent(componentId);
+    if (component) {
+      component.updateValue({
+        detail: {
+          newValue: newValue
+        }
+      });
+    }
   },
 
   onLoad: function () {
@@ -26,15 +38,18 @@ Page({
       });
 
       index++;
-      if (index < robotMessages.length && index <= 2 ) {
+      if (index < robotMessages.length) {
         setTimeout(addMessage, 1000); // 1秒延时
-      }
-      if(index===2)
-      {
+      } else {
         setTimeout(() => {
           this.setData({
             showComponent: true
           });
+          const componentIds = ['#JieMian', '#BaoShi', '#JingHua'];
+          const buttonNames = this.data.buttonNames;
+          for (let i = 0; i < componentIds.length; i++) {
+            this.updateValue(componentIds[i], buttonNames[i]);
+          }
         }, 1000);
       }
     };
@@ -44,15 +59,24 @@ Page({
 
 
 
-  handleButtonClick: function () {
+  handleButtonClick: function (event) {
+    const buttonName = event.currentTarget.dataset.buttonName;
+    const recommendation = `关于"${buttonName}"我有以下推荐：`;
+    
     const robotMessage = {
       role: 'robot',
-      content: '关于“洁面”我有以下推荐：'
+      content: recommendation
     };
-    const chatRecords = this.data.chatRecords.concat(robotMessage); 
+
+    this.setData({
+      ClearFace: true,
+    })
+  
+    const chatRecords = this.data.chatRecords.concat(robotMessage);
     this.setData({
       chatRecords,
     });
   }
+  
 
 });

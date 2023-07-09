@@ -1,7 +1,5 @@
 {
-  "usingComponents": {
-    "test":"/components/my-components/my-component"
-  },
+  "usingComponents": {},
   "navigationBarBackgroundColor": "#007CA5",
   "navigationBarTitleText": "控肤玩家"
 }

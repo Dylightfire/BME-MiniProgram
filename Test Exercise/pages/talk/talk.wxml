@@ -1,6 +1,7 @@
-<view>
-  <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
+<view class="background">
+  <image src="/images/UI设计图片/背景图.jpg" class="background-image"></image>
 </view>
+
 
 <scroll-view scroll-y="true" class="chat-content">
   <view class="chat-messages">
@@ -18,11 +19,37 @@
       </view>
     </block>
   </view>
+
+  <view class="component-1">
+    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick" id="JieMian" buttonName="{{buttonNames[0]}}" data-button-name="洁面"></chooseButton>
+    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick" id="BaoShi" buttonName="{{buttonNames[1]}}" data-button-name="保湿"></chooseButton>
+    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick" id="JingHua" buttonName="{{buttonNames[2]}}" data-button-name="精华"></chooseButton>
+  </view>
+
+  <view class="chat-messages" wx:if="{{ ClearFace }}">
+    <block wx:for="{{ chatRecords }}" wx:key="index">
+      <view class="chat-message" wx:if="{{ item.role === 'robot' }}">
+        <view class="message-container">
+          <image class="avatar" src="/images/UI设计图片/蟹老板.png"></image>
+          <view class="robot-bubble">
+            <image class="bubble-background" src="/images/UI设计图片/聊天框（已抠）.png"></image>
+            <view class="robot-message-container">
+              <text class="robot-message">{{ item.content }}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+    
 </scroll-view>
 
 
-<view class="component-1">
-  <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick"></chooseButton>
-</view>
+
+
+
+
+
+
 
 

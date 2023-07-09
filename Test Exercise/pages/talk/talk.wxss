@@ -1,13 +1,17 @@
-.backimage{
-  position: absolute;
+.background {
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: 0;
-  display: block;
   width: 100%;
   height: 100%;
   z-index: -999;
 }
 
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .chat-messages {
   height: 100%;
   padding-bottom: 100rpx; /* 可选，根据需要微调底部留白 */
@@ -69,4 +73,11 @@
   100% {
     opacity: 1;
   }
+}
+
+.component-1{
+  margin-top: -80rpx;
+  margin-left: 50rpx;
+  display: flex;
+  justify-content: space-between;
 }
