@@ -10,7 +10,7 @@
         <view class="message-container">
           <image class="avatar" src="/images/UI设计图片/蟹老板.png"></image>
           <view class="robot-bubble">
-            <image class="bubble-background" src="/images/UI设计图片/聊天框（已抠）.png"></image>
+            <image class="bubble-background" src="/images/蟹老板/红色对话框.png"></image>
             <view class="robot-message-container">
               <text class="robot-message">{{ item.content }}</text>
             </view>
@@ -21,18 +21,27 @@
   </view>
 
   <view class="component-1">
-    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick" id="JieMian" buttonName="{{buttonNames[0]}}" data-button-name="洁面"></chooseButton>
-    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick" id="BaoShi" buttonName="{{buttonNames[1]}}" data-button-name="保湿"></chooseButton>
-    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick" id="JingHua" buttonName="{{buttonNames[2]}}" data-button-name="精华"></chooseButton>
+    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick1" id="JieMian" buttonName="{{buttonNames[0]}}" data-button-name="洁面"></chooseButton>
+    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick2" id="BaoShi" buttonName="{{buttonNames[1]}}" data-button-name="保湿"></chooseButton>
+    <chooseButton wx:if="{{showComponent}}" bind:click="handleButtonClick3" id="JingHua" buttonName="{{buttonNames[2]}}" data-button-name="精华"></chooseButton>
   </view>
-
+  
   <view class="chat-messages" wx:if="{{ ClearFace }}">
+    <view class="return-message">
+        <view class="user-bubble">
+          <image class="user-bubble-background" src="/images/蟹老板/红色对话框.png"></image>
+          <view class="user-message-container">
+              <text class="user-message">洁面</text>
+          </view>
+        </view>
+        <image class="user-avator" src="/images/UI设计图片/蟹老板(1).png"></image>
+      </view>
     <block wx:for="{{ chatRecords }}" wx:key="index">
-      <view class="chat-message" wx:if="{{ item.role === 'robot' }}">
+      <view class="chat-message" wx:if="{{ item.role === 'robotJieMian' }}">
         <view class="message-container">
           <image class="avatar" src="/images/UI设计图片/蟹老板.png"></image>
           <view class="robot-bubble">
-            <image class="bubble-background" src="/images/UI设计图片/聊天框（已抠）.png"></image>
+            <image class="bubble-background" src="/images/蟹老板/红色对话框.png"></image>
             <view class="robot-message-container">
               <text class="robot-message">{{ item.content }}</text>
             </view>
@@ -40,7 +49,85 @@
         </view>
       </view>
     </block>
+
+    <view class="image-container" wx:if="{{ClearFace_1}}">
+      <image class="background-image" src="/images/蟹老板/大对话框.png"></image>
+      <view class="button-container">
+        <KeRunRecommend class="Recommend" bind:click="KeRunJump" id="KeRun"></KeRunRecommend>
+        <SLFRecommend class="Recommend" bind:click="SLFJump" id="SLF"></SLFRecommend>
+        <FLFSRecommend class="Recommend" bind:click="FLFSJump" id="FLFS"></FLFSRecommend>
+      </view>
+    </view>
   </view>
+
+  <view class="chat-messages" wx:if="{{ Moisturize }}">
+    <view class="return-message">
+        <view class="user-bubble">
+          <image class="user-bubble-background" src="/images/蟹老板/红色对话框.png"></image>
+          <view class="user-message-container">
+              <text class="user-message">保湿</text>
+          </view>
+        </view>
+        <image class="user-avator" src="/images/UI设计图片/蟹老板(1).png"></image>
+      </view>
+    <block wx:for="{{ chatRecords }}" wx:key="index">
+      <view class="chat-message" wx:if="{{ item.role === 'robotBaoShi' }}">
+        <view class="message-container">
+          <image class="avatar" src="/images/UI设计图片/蟹老板.png"></image>
+          <view class="robot-bubble">
+            <image class="bubble-background" src="/images/蟹老板/红色对话框.png"></image>
+            <view class="robot-message-container">
+              <text class="robot-message">{{ item.content }}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <view class="image-container" wx:if="{{Moisturize_1}}">
+      <image class="background-image" src="/images/蟹老板/大对话框.png"></image>
+      <view class="button-container">
+        <KeRunRecommend class="Recommend" bind:click="KeRunJump" id="KeRun"></KeRunRecommend>
+        <SLFRecommend class="Recommend" bind:click="SLFJump" id="SLF"></SLFRecommend>
+        <FLFSRecommend class="Recommend" bind:click="FLFSJump" id="FLFS"></FLFSRecommend>
+      </view>
+    </view>
+  </view>
+
+  <view class="chat-messages" wx:if="{{ Essence }}">
+    <view class="return-message">
+        <view class="user-bubble">
+          <image class="user-bubble-background" src="/images/蟹老板/红色对话框.png"></image>
+          <view class="user-message-container">
+              <text class="user-message">精华</text>
+          </view>
+        </view>
+        <image class="user-avator" src="/images/UI设计图片/蟹老板(1).png"></image>
+      </view>
+    <block wx:for="{{ chatRecords }}" wx:key="index">
+      <view class="chat-message" wx:if="{{ item.role === 'robotJingHua' }}">
+        <view class="message-container">
+          <image class="avatar" src="/images/UI设计图片/蟹老板.png"></image>
+          <view class="robot-bubble">
+            <image class="bubble-background" src="/images/蟹老板/红色对话框.png"></image>
+            <view class="robot-message-container">
+              <text class="robot-message">{{ item.content }}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <view class="image-container" wx:if="{{Essence_1}}">
+      <image class="background-image" src="/images/蟹老板/大对话框.png"></image>
+      <view class="button-container">
+        <KeRunRecommend class="Recommend" bind:click="KeRunJump" id="KeRun"></KeRunRecommend>
+        <SLFRecommend class="Recommend" bind:click="SLFJump" id="SLF"></SLFRecommend>
+        <FLFSRecommend class="Recommend" bind:click="FLFSJump" id="FLFS"></FLFSRecommend>
+      </view>
+    </view>
+  </view>
+
     
 </scroll-view>
 

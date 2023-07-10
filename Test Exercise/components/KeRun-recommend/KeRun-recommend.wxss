@@ -1,11 +1,13 @@
 .button-container {
   position: relative;
-  width: 200rpx;
+  width: 500rpx;
   height: 100rpx;
+  display: flex;
+  justify-content: space-around;
 }
 
 .button-image {
-  width: 100%;
+  width: 300%;
   height: 100%;
 }
 

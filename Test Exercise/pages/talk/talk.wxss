@@ -6,7 +6,7 @@
   height: 100%;
   z-index: -999;
 }
-
+/*蟹老板发言*/
 .background-image {
   width: 100%;
   height: 100%;
@@ -43,10 +43,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: -40rpx;
-  margin-top: -10rpx;
-  width: 120%;
-  height: 120%;
+  margin-left: -10rpx;
+  margin-top: 0rpx;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 .robot-message {
@@ -75,9 +75,76 @@
   }
 }
 
+/*按钮组件*/
 .component-1{
   margin-top: -80rpx;
   margin-left: 50rpx;
   display: flex;
   justify-content: space-between;
 }
+
+/*回复*/
+.return-message{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30rpx;
+}
+.user-avator{
+  width: 130rpx;
+  height: 130rpx;
+  margin-left: 0rpx; /* 将左边距设为 auto，使图像靠右对齐 */
+  border-radius: 50%;
+  opacity: 1;
+  animation: fade-in 1s forwards;
+}
+.user-bubble{
+  margin-left: auto; 
+  position: relative;
+  margin-top: 18rpx;
+  display: inline-block;
+  min-height: 30rpx;
+  opacity: 1;
+  animation: fade-in 1s forwards;
+}
+.user-bubble-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: -10rpx;
+  margin-top: 0rpx;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.user-message{
+  padding: 25rpx;
+  color: red;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  word-break: break-all;
+  max-width: 90%;
+}
+
+/*菜单1*/
+.image-container {
+  position: relative;
+  margin-left: 0rpx;
+  width: 100%;
+  height: 450rpx; /* 设置容器的高度，根据实际情况调整 */
+}
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Recommend{
+  margin-top: 25rpx;
+}
+
+
+

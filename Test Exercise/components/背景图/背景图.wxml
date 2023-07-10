@@ -1,4 +1,0 @@
-<!--components/背景图/背景图.wxml-->
-<view>
-  <image src="/images/UI设计图片/背景图.jpg"></image>
-</view>

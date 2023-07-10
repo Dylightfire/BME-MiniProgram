@@ -1,0 +1,61 @@
+<!--pages/recommend_1/recommend_1.wxml-->
+<view>
+  <image src="/images/UI设计图片/背景图.jpg" class="backimage"></image>
+</view>
+
+<view class="container">
+  <view class="product-information">
+    <image class="picture" src="/images/UI设计图片/蟹老板(1).png"></image>
+    <text class="product-name">品名：XXXX</text>
+    <text class="product-name">产地：XXXX</text>
+    <view class="product-name">参考价格：XXXX</view>
+  </view>
+
+  <view class="ingredient">
+    <image class="background-image" src="/images/蟹老板/大对话框.png"></image>
+    <view class="ingredient-information">
+      <text class="textpart">成分与功效</text>
+      <view class="information-bubble">
+        <image class="bubble" src="/images/蟹老板/红色对话框.png"></image>
+        <view class="textmessage">
+        </view>
+      </view>
+
+      <view class="information-bubble">
+        <image class="bubble" src="/images/蟹老板/红色对话框.png"></image>
+        <view class="textmessage">
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="range">
+    
+    <image class="background-image" src="/images/蟹老板/大对话框.png"></image>
+    <view class="check1">
+      <text class="textpart1">适用肤质范围</text>
+    </view>
+    
+    <view class="range-information">
+      <view class="information-bubble">
+        <image class="range-bubble" src="/images/UI设计图片/按钮（红色）.png"></image>
+        <view class="textmessage">
+        </view>
+      </view>
+
+      <view class="information-bubble">
+        <image class="range-bubble" src="/images/UI设计图片/按钮（红色）.png"></image>
+        <view class="textmessage">
+        </view>
+      </view>
+
+      <view class="information-bubble">
+        <image class="range-bubble" src="/images/UI设计图片/按钮（红色）.png"></image>
+        <view class="textmessage">
+        </view>
+      </view>
+    </view>
+  
+  </view>
+
+</view>

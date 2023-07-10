@@ -4,6 +4,11 @@ Page({
     showComponent: false,
     buttonNames: ['洁面', '保湿', '精华'],
     ClearFace: false,
+    ClearFace_1: false,
+    Moisturize: false,
+    Moisturize_1: false,
+    Essence: false,
+    Essence_1: false,
   },
   updateValue: function (componentId, newValue) {
     const component = this.selectComponent(componentId);
@@ -57,26 +62,83 @@ Page({
   },
 
 
-
-
-  handleButtonClick: function (event) {
-    const buttonName = event.currentTarget.dataset.buttonName;
-    const recommendation = `关于"${buttonName}"我有以下推荐：`;
-    
+  handleButtonClick1: function (event) {
+    const recommendation = `关于“洁面”我有以下推荐：`;
     const robotMessage = {
-      role: 'robot',
+      role: 'robotJieMian',
       content: recommendation
     };
-
     this.setData({
       ClearFace: true,
-    })
-  
-    const chatRecords = this.data.chatRecords.concat(robotMessage);
-    this.setData({
-      chatRecords,
+      Moisturize: false,
+      Essence: false,
     });
+    setTimeout(() => {
+      const chatRecords = this.data.chatRecords.concat(robotMessage);
+      this.setData({
+        chatRecords,
+      });
+      setTimeout(() => {
+        this.setData({
+          ClearFace_1: true,
+        })
+      }, 1000);
+    }, 1000);
+  },
+  KeRunJump:function (event) {
+    wx.navigateTo({
+      url: '/pages/recommend_1/recommend_1',
+    })
+  },
+
+  handleButtonClick2: function (event) {
+    const buttonName = event.currentTarget.dataset.buttonName;
+    const recommendation = `关于"${buttonName}"我有以下推荐：`;
+    const robotMessage = {
+      role: 'robotBaoShi',
+      content: recommendation
+    };
+    this.setData({
+      ClearFace: false,
+      Moisturize: true,
+      Essence: false,
+    })
+    setTimeout(() => {
+      const chatRecords = this.data.chatRecords.concat(robotMessage);
+      this.setData({
+        chatRecords,
+      });
+      setTimeout(() => {
+        this.setData({
+          Moisturize_1: true,
+        })
+      }, 1000);
+    }, 1000);
+  },
+
+  handleButtonClick3: function (event) {
+    const buttonName = event.currentTarget.dataset.buttonName;
+    const recommendation = `关于"${buttonName}"我有以下推荐：`;
+    const robotMessage = {
+      role: 'robotJingHua',
+      content: recommendation
+    };
+    this.setData({
+      ClearFace: false,
+      Moisturize: false,
+      Essence: true,
+    })
+    setTimeout(() => {
+      const chatRecords = this.data.chatRecords.concat(robotMessage);
+      this.setData({
+        chatRecords,
+      });
+      setTimeout(() => {
+        this.setData({
+          Essence_1: true,
+        })
+      }, 1000);
+    }, 1000);
   }
-  
 
 });

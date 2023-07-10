@@ -8,7 +8,8 @@
     "pages/information/information",
     "pages/knowledge/knowledge",
     "pages/robot/robot",
-    "pages/talk/talk"
+    "pages/talk/talk",
+    "pages/recommend_1/recommend_1"
   ],
   "plugins": {
     "chatbot": {

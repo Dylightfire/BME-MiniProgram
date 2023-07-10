@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "chooseButton": "/components/my-components/my-component"
+    "chooseButton": "/components/my-components/my-component",
+    "KeRunRecommend": "/components/KeRun-recommend/KeRun-recommend",
+    "SLFRecommend": "/components/ShiLeFu-recommend/ShiLeFu-recommend",
+    "FLFSRecommend" :"/components/FLFS-recommend/FLFS-recommend"
   },
   "navigationBarBackgroundColor": "#007CA5",
   "navigationBarTitleText": "控肤玩家"

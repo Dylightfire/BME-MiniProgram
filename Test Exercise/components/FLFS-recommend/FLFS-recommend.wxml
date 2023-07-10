@@ -1,0 +1,4 @@
+<view class="button-container" bindtap="handleTap">
+  <image class="button-image" src="/images/蟹老板/红色对话框.png"></image>
+  <text class="button-text">{{buttonName}}</text>
+</view>
